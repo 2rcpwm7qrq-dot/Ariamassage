@@ -1,4 +1,5 @@
 import teamSpa from "@/assets/team-spa.jpeg";
+import { useLang } from "@/lib/i18n";
 
 const STOCK = [
   {
