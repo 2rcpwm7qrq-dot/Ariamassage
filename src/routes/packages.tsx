@@ -24,7 +24,8 @@ export const Route = createFileRoute("/packages")({
 });
 
 function PackagesPage() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
+  const items = PACKAGE_TREATMENTS.map((p) => translateMenuItem(p, lang));
   return (
     <>
       <section className="bg-gradient-hero pb-14 pt-32 sm:pb-20 sm:pt-52">
@@ -33,17 +34,17 @@ function PackagesPage() {
             — {t.nav.packages}
           </span>
           <h1 className="mt-3 font-serif text-4xl font-medium text-foreground sm:text-5xl">
-            Package Treatments
+            {t.packagesPage.title}
           </h1>
           <p className="mt-4 text-sm text-muted-foreground">
-            All prices in thousands of Indonesian Rupiah (e.g. 500 = 500,000 IDR).
+            {t.packagesPage.priceNote}
           </p>
         </div>
       </section>
 
       <section className="bg-gradient-soft py-20 sm:py-28">
         <div className="mx-auto grid max-w-5xl gap-6 px-4 sm:grid-cols-2 sm:px-6">
-          {PACKAGE_TREATMENTS.map((p, i) => (
+          {items.map((p, i) => (
             <a
               key={p.name}
               href={WHATSAPP_LINK}
