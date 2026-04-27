@@ -80,7 +80,7 @@ function GalleryPage() {
           </div>
 
           <h2 className="mt-20 text-[11px] font-medium uppercase tracking-[0.28em] text-primary">
-            — Videos
+            — {t.gallery.videos}
           </h2>
           <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {videos.map((v, i) => (
