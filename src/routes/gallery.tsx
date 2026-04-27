@@ -47,10 +47,10 @@ function GalleryPage() {
             — {t.nav.gallery}
           </span>
           <h1 className="mt-3 font-serif text-4xl font-medium text-foreground sm:text-5xl">
-            Gallery
+            {t.gallery.title}
           </h1>
           <p className="mt-4 text-sm text-muted-foreground">
-            A glimpse into our treatments, therapists, and home service moments in Seminyak.
+            {t.gallery.sub}
           </p>
         </div>
       </section>
@@ -58,7 +58,7 @@ function GalleryPage() {
       <section className="bg-gradient-soft py-20 sm:py-28">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <h2 className="text-[11px] font-medium uppercase tracking-[0.28em] text-primary">
-            — Photos
+            — {t.gallery.photos}
           </h2>
           <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {photos.map((p, i) => (
