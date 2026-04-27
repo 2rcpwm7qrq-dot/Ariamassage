@@ -41,12 +41,12 @@ function GalleryPage() {
 
   return (
     <>
-      <section className="bg-gradient-hero pb-14 pt-32 sm:pb-20 sm:pt-52">
+      <section className="bg-gradient-hero pb-10 pt-28 sm:pb-20 sm:pt-52">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-primary">
             — {t.nav.gallery}
           </span>
-          <h1 className="mt-3 font-serif text-4xl font-medium text-foreground sm:text-5xl">
+          <h1 className="mt-3 font-serif text-[2rem] font-medium text-foreground sm:text-5xl">
             {t.gallery.title}
           </h1>
           <p className="mt-4 text-sm text-muted-foreground">
@@ -55,8 +55,8 @@ function GalleryPage() {
         </div>
       </section>
 
-      <section className="bg-gradient-soft py-20 sm:py-28">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="bg-gradient-soft py-14 sm:py-24">
+        <div className="mx-auto max-w-6xl px-5 sm:px-6">
           <h2 className="text-[11px] font-medium uppercase tracking-[0.28em] text-primary">
             — {t.gallery.photos}
           </h2>

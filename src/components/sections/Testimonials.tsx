@@ -31,13 +31,13 @@ const REVIEWS = [
 export function Testimonials() {
   const { t } = useLang();
   return (
-    <section className="bg-gradient-soft py-20 sm:py-28">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6">
+    <section className="bg-gradient-soft py-14 sm:py-24">
+      <div className="mx-auto max-w-5xl px-5 sm:px-6">
         <div className="max-w-3xl">
           <span className="text-[11px] font-medium uppercase tracking-[0.28em] text-primary">
             — {t.reviews.eyebrow}
           </span>
-          <h2 className="mt-5 font-serif text-4xl font-medium leading-[1.05] text-foreground text-balance sm:text-5xl">
+          <h2 className="mt-5 font-serif text-[2rem] font-medium leading-[1.05] text-foreground text-balance sm:text-5xl">
             {t.reviews.title}
           </h2>
         </div>

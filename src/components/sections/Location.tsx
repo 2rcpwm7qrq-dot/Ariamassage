@@ -5,14 +5,14 @@ export function Location() {
   const { t } = useLang();
   const q = encodeURIComponent("Jl. Dewi Saraswati II, Seminyak, Bali 80361");
   return (
-    <section className="bg-background py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+    <section className="bg-background py-14 sm:py-24">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <div className="grid gap-12 md:grid-cols-12 md:gap-10">
           <div className="md:col-span-5 md:pt-4">
             <span className="text-[11px] font-medium uppercase tracking-[0.28em] text-primary">
               — {t.location.eyebrow}
             </span>
-            <h2 className="mt-5 font-serif text-4xl font-medium leading-[1.05] text-foreground text-balance sm:text-5xl">
+            <h2 className="mt-5 font-serif text-[2rem] font-medium leading-[1.05] text-foreground text-balance sm:text-5xl">
               {t.location.title}
             </h2>
             <div className="mt-8 divider-rule" />
@@ -28,7 +28,7 @@ export function Location() {
             <iframe
               title="Aria Bali Massage location"
               src={`https://www.google.com/maps?q=${q}&output=embed`}
-              className="h-80 w-full border border-border/70 grayscale-[20%] md:h-[28rem]"
+              className="h-64 w-full rounded-2xl border border-border/70 grayscale-[20%] sm:h-80 md:h-[28rem] md:rounded-none"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />

@@ -6,7 +6,7 @@ function FrangipaniBg() {
   return (
     <svg
       aria-hidden="true"
-      className="pointer-events-none absolute -right-20 -top-10 h-[420px] w-[420px] opacity-90"
+      className="pointer-events-none absolute -right-16 -top-6 h-[260px] w-[260px] opacity-80 sm:-right-20 sm:-top-10 sm:h-[420px] sm:w-[420px] sm:opacity-90"
       viewBox="0 0 400 400"
       fill="none"
     >
@@ -34,28 +34,28 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-hero">
       <FrangipaniBg />
-      <div className="relative mx-auto w-full max-w-6xl px-5 pb-20 pt-32 sm:px-6 sm:pt-48 sm:pb-24 md:pb-36 md:pt-56">
+      <div className="relative mx-auto w-full max-w-6xl px-5 pb-16 pt-28 sm:px-6 sm:pt-48 sm:pb-24 md:pb-36 md:pt-56">
         <div className="animate-fade-up">
-          <span className="text-[11px] font-medium uppercase tracking-[0.28em] text-primary">
+          <span className="text-[10px] font-medium uppercase tracking-[0.28em] text-primary sm:text-[11px]">
             — {t.hero.eyebrow}
           </span>
-          <h1 className="mt-6 max-w-4xl font-serif text-[2.6rem] font-medium leading-[1.05] text-foreground text-balance sm:text-6xl md:text-7xl lg:text-[5.5rem]">
+          <h1 className="mt-5 max-w-4xl font-serif text-[2.1rem] font-medium leading-[1.05] text-foreground text-balance sm:text-6xl md:text-7xl lg:text-[5.5rem]">
             {t.hero.title}
           </h1>
-          <h2 className="mt-2 max-w-3xl font-serif text-3xl italic font-normal leading-tight text-primary sm:text-4xl md:text-5xl">
+          <h2 className="mt-2 max-w-3xl font-serif text-[1.6rem] italic font-normal leading-tight text-primary sm:text-4xl md:text-5xl">
             {t.hero.titleAccent}
           </h2>
-          <div className="mt-10 flex max-w-xl flex-col gap-6 sm:flex-row sm:items-end sm:gap-10">
-            <p className="flex-1 text-base leading-relaxed text-muted-foreground text-pretty sm:text-lg">
+          <div className="mt-7 flex max-w-xl flex-col gap-6 sm:mt-10 sm:flex-row sm:items-end sm:gap-10">
+            <p className="flex-1 text-[15px] leading-relaxed text-muted-foreground text-pretty sm:text-lg">
               {t.hero.subtitle}
             </p>
           </div>
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+          <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:items-center sm:gap-4">
             <a
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex h-12 items-center justify-center gap-2 rounded-full bg-primary px-8 text-sm font-medium uppercase tracking-wider text-primary-foreground shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-card active:scale-[0.97] active:translate-y-0"
+              className="group inline-flex h-14 w-full items-center justify-center gap-2 rounded-full bg-primary px-8 text-sm font-medium uppercase tracking-wider text-primary-foreground shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-card active:scale-[0.97] active:translate-y-0 sm:h-12 sm:w-auto"
             >
               <MessageCircle className="h-4 w-4 transition-transform duration-300 group-hover:rotate-[-8deg] group-active:rotate-[-12deg]" />
               {t.cta.whatsapp}
@@ -63,7 +63,7 @@ export function Hero() {
             </a>
             <Link
               to="/body-treatments"
-              className="group inline-flex items-center gap-2 text-sm font-medium uppercase tracking-wider text-foreground hover:text-primary"
+              className="group inline-flex h-12 w-full items-center justify-center gap-2 text-sm font-medium uppercase tracking-wider text-foreground hover:text-primary sm:h-auto sm:w-auto sm:justify-start"
             >
               <span className="underline-coral">{t.cta.viewServices}</span>
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

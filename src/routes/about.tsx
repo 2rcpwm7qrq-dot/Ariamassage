@@ -33,19 +33,19 @@ function AboutPage() {
   ];
   return (
     <>
-      <section className="bg-gradient-hero pb-14 pt-32 sm:pb-24 sm:pt-52">
+      <section className="bg-gradient-hero pb-12 pt-28 sm:pb-24 sm:pt-52">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-primary">
             {t.about.eyebrow}
           </span>
-          <h1 className="mt-3 font-serif text-4xl font-medium text-foreground sm:text-5xl">
+          <h1 className="mt-3 font-serif text-[2rem] font-medium text-foreground sm:text-5xl">
             {t.about.title}
           </h1>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground">{t.about.body}</p>
         </div>
       </section>
       <section className="bg-background py-16 sm:py-24">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+        <div className="mx-auto max-w-5xl px-5 sm:px-6">
           <div className="space-y-12">
             {items.map(({ icon: Icon, t: title, d }, i) => (
               <div key={title} className="grid grid-cols-12 items-baseline gap-4 border-b border-border/70 pb-12 last:border-b-0">

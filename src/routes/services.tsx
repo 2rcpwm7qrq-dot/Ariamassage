@@ -31,7 +31,7 @@ function ServicesPage() {
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-primary">
             {t.services.eyebrow}
           </span>
-          <h1 className="mt-3 font-serif text-4xl font-medium text-foreground sm:text-5xl">
+          <h1 className="mt-3 font-serif text-[2rem] font-medium text-foreground sm:text-5xl">
             {t.services.title}
           </h1>
           <p className="mt-4 text-muted-foreground">{t.services.durations}</p>

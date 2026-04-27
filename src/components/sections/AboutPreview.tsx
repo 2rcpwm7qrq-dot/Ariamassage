@@ -9,14 +9,14 @@ export function AboutPreview() {
     { icon: Leaf, t: t.about.h3, d: t.about.h3d },
   ];
   return (
-    <section className="bg-background py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+    <section className="bg-background py-14 sm:py-24">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <div className="grid gap-12 md:grid-cols-12 md:gap-16">
           <div className="md:col-span-5">
             <span className="text-[11px] font-medium uppercase tracking-[0.28em] text-primary">
               — {t.about.eyebrow}
             </span>
-            <h2 className="mt-5 font-serif text-4xl font-medium leading-[1.05] text-foreground text-balance sm:text-5xl">
+            <h2 className="mt-5 font-serif text-[2rem] font-medium leading-[1.05] text-foreground text-balance sm:text-5xl">
               {t.about.title}
             </h2>
           </div>

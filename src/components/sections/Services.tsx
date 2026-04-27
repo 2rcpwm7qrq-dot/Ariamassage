@@ -6,14 +6,14 @@ const ICONS = [Flower2, Sparkles, Footprints, Droplets, Hand];
 export function Services({ compact = false }: { compact?: boolean }) {
   const { t } = useLang();
   return (
-    <section className="bg-gradient-soft py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+    <section className="bg-gradient-soft py-14 sm:py-24">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <span className="text-[11px] font-medium uppercase tracking-[0.28em] text-primary">
               — {t.services.eyebrow}
             </span>
-            <h2 className="mt-5 max-w-2xl font-serif text-4xl font-medium leading-[1.05] text-foreground text-balance sm:text-5xl">
+            <h2 className="mt-5 max-w-2xl font-serif text-[2rem] font-medium leading-[1.05] text-foreground text-balance sm:text-5xl">
               {t.services.title}
             </h2>
           </div>
