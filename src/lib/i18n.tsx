@@ -183,7 +183,7 @@ export const BODY_TREATMENTS: MenuItem[] = [
     name: "Balinese Massage",
     price: "200",
     duration: "60 min",
-    desc: "Traditional full-body technique combining gentle stretches, long strokes, and acupressure with warm aromatic oil to release tension and restore balance.",
+    desc: "Traditional full-body technique combining gentle stretches, long strokes, and acupressure with medium pressure to release tension and restore balance.",
   },
   {
     name: "Relaxing Massage",
