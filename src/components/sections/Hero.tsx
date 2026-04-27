@@ -6,7 +6,7 @@ function FrangipaniBg() {
   return (
     <svg
       aria-hidden="true"
-      className="pointer-events-none absolute -right-20 -top-10 h-[420px] w-[420px] opacity-90"
+      className="pointer-events-none absolute -right-16 -top-6 h-[260px] w-[260px] opacity-80 sm:-right-20 sm:-top-10 sm:h-[420px] sm:w-[420px] sm:opacity-90"
       viewBox="0 0 400 400"
       fill="none"
     >
