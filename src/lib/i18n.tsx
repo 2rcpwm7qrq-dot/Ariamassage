@@ -316,6 +316,115 @@ export const PACKAGE_TREATMENTS: MenuItem[] = [
   },
 ];
 
+// Indonesian translations for treatment & package names + descriptions.
+// Keyed by the canonical English name above.
+const MENU_ID: Record<string, { name: string; desc?: string }> = {
+  "Balinese Massage": {
+    name: "Pijat Bali",
+    desc: "Teknik tradisional seluruh tubuh dengan peregangan lembut, usapan panjang, dan akupresur menggunakan minyak aromaterapi hangat untuk melepas ketegangan dan mengembalikan keseimbangan.",
+  },
+  "Relaxing Massage": {
+    name: "Pijat Relaksasi",
+    desc: "Usapan lambat dan mengalir dengan tekanan ringan hingga sedang untuk menenangkan sistem saraf, meredakan stres, dan membuat Anda benar-benar rileks.",
+  },
+  "Foot Reflexology": {
+    name: "Refleksi Kaki",
+    desc: "Tekanan terarah pada titik refleks kaki untuk melancarkan sirkulasi, meredakan kaki lelah, dan mendukung kesehatan tubuh secara menyeluruh.",
+  },
+  "Anti Stress Massage": {
+    name: "Pijat Anti Stres",
+    desc: "Fokus pada kepala, leher, bahu, dan punggung untuk meluruhkan ketegangan akibat layar, perjalanan, dan stres harian.",
+  },
+  "Deep Tissue Massage": {
+    name: "Pijat Jaringan Dalam",
+    desc: "Tekanan kuat dan perlahan menjangkau lapisan otot dan jaringan ikat yang lebih dalam — cocok untuk ketegangan kronis, simpul otot, dan pemulihan olahraga.",
+  },
+  "Four Hand Massage": {
+    name: "Pijat Empat Tangan",
+    desc: "Dua terapis bekerja serempak dengan gerakan cermin untuk pengalaman pijat seluruh tubuh yang mendalam dan hampir meditatif.",
+  },
+  "Thai Massage": {
+    name: "Pijat Thai",
+    desc: "Dilakukan di atas matras dengan pakaian longgar, memadukan peregangan ala yoga dan tekanan ritmis untuk meningkatkan kelenturan dan aliran energi.",
+  },
+  "Natural Coconut Relaxing Massage": {
+    name: "Pijat Relaksasi Minyak Kelapa Alami",
+    desc: "Pijat relaksasi yang menutrisi menggunakan minyak kelapa murni khas Bali untuk melembapkan kulit sekaligus meredakan ketegangan otot.",
+  },
+  "Facial Oriflame": {
+    name: "Facial Oriflame",
+    desc: "Pembersihan, eksfoliasi, pijat lembut, dan masker dengan produk Oriflame untuk menyegarkan, mencerahkan, dan merevitalisasi kulit wajah.",
+  },
+  "Pedicure": {
+    name: "Pedikur",
+    desc: "Perawatan kaki dan kuku lengkap meliputi rendaman, eksfoliasi, perawatan kutikula, pembentukan, dan pewarnaan untuk kaki yang halus dan rapi.",
+  },
+  "Manicure": {
+    name: "Manikur",
+    desc: "Perawatan tangan dan kuku dengan rendaman, eksfoliasi, perawatan kutikula, pembentukan, dan pewarnaan agar tangan halus dan tampil rapi.",
+  },
+  "Creambath": {
+    name: "Creambath",
+    desc: "Ritual rambut dan kulit kepala khas Indonesia dengan krim bernutrisi, pijat kulit kepala, dan uap hangat untuk rambut lebih sehat dan berkilau.",
+  },
+  "Hot Stone Massage": {
+    name: "Pijat Batu Panas",
+    desc: "Batu vulkanik halus yang dihangatkan meluncur di sepanjang tubuh untuk menghangatkan otot, melancarkan sirkulasi, dan melepas ketegangan membandel.",
+  },
+  "Anti Cellulite Massage": {
+    name: "Pijat Anti Selulit",
+    desc: "Teknik remasan dan cubitan kuat pada pinggul, paha, dan perut untuk melancarkan sirkulasi, menghaluskan kulit, dan mengurangi tampilan selulit.",
+  },
+  "Lymphatic Drainage": {
+    name: "Drainase Limfatik",
+    desc: "Usapan ringan dan ritmis yang merangsang sistem limfatik untuk mengurangi retensi cairan, meredakan bengkak, dan mendukung detoksifikasi alami.",
+  },
+  "Hair Braid": {
+    name: "Kepang Rambut",
+    desc: "Kepangan ala pantai sesuai selera Anda — dari beberapa kepang aksen hingga seluruh kepala. Harga bervariasi tergantung gaya dan panjang rambut.",
+  },
+  "Head + Foot Massage": {
+    name: "Pijat Kepala + Kaki",
+    desc: "Kombinasi menenangkan antara pijat kulit kepala, leher, dan kaki — pas untuk meredakan sakit kepala dan kaki lelah tanpa sesi pijat seluruh tubuh.",
+  },
+  "Pregnancy Massage": {
+    name: "Pijat Ibu Hamil",
+    desc: "Pijat lembut dengan posisi miring khusus ibu hamil (setelah trimester pertama) untuk meredakan keluhan punggung, pinggul, dan kaki dengan aman.",
+  },
+  "Honeymoon Package (2 Pax)": {
+    name: "Paket Bulan Madu (2 Orang)",
+    desc: "Pijat Bali, Lulur, Masker Tubuh, dan Facial.",
+  },
+  "Single Package": {
+    name: "Paket Single",
+    desc: "Pijat Bali, Masker Tubuh Lidah Buaya, Mini Facial, dan Ear Candle gratis.",
+  },
+  "90 Minutes Package": {
+    name: "Paket 90 Menit",
+    desc: "Pijat Kepala, Pijat Kaki, dan Ear Candle.",
+  },
+  "120 Minutes Package": {
+    name: "Paket 120 Menit",
+    desc: "Pijat Bali 90 Menit dan Lulur 30 Menit.",
+  },
+};
+
+export function translateDuration(d: string, lang: Lang): string {
+  if (lang !== "id") return d;
+  return d.replace(/\bmin\b/g, "menit");
+}
+
+export function translateMenuItem(item: MenuItem, lang: Lang): MenuItem {
+  if (lang !== "id") return item;
+  const tr = MENU_ID[item.name];
+  return {
+    ...item,
+    name: tr?.name ?? item.name,
+    desc: tr?.desc ?? item.desc,
+    duration: translateDuration(item.duration, lang),
+  };
+}
+
 
 type Dict = (typeof translations)["en"];
 
