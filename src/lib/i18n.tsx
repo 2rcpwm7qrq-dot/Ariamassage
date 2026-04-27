@@ -5,7 +5,7 @@ export type Lang = "en" | "id";
 export const translations = {
   en: {
     nav: { home: "Home", services: "Services", body: "Body Treatments", packages: "Packages", gallery: "Gallery", about: "About", contact: "Contact" },
-    cta: { whatsapp: "Book via WhatsApp", whatsappShort: "WhatsApp", viewServices: "View Services", bookNow: "Book Now via WhatsApp" },
+    cta: { whatsapp: "Book via WhatsApp", whatsappShort: "WhatsApp", viewServices: "View Services", bookNow: "Book Now via WhatsApp", viewFullMenu: "View full menu" },
     hero: {
       eyebrow: "Home Service Massage · Seminyak",
       title: "Relax. Recharge. Rebalance.",
@@ -58,11 +58,39 @@ export const translations = {
       title: "Ready to relax?",
       sub: "Send us a message on WhatsApp and we'll arrange your session.",
     },
+    bodyMenu: {
+      title: "Body Treatment Menu",
+      priceNote: "All prices in thousands of Indonesian Rupiah (e.g. 200 = 200,000 IDR).",
+      signatureTitle: "Signature body treatments",
+      signatureSub: "A taste of our most loved treatments. Prices in thousands of IDR (e.g. 200 = 200,000 IDR).",
+    },
+    packagesPage: {
+      title: "Package Treatments",
+      priceNote: "All prices in thousands of Indonesian Rupiah (e.g. 500 = 500,000 IDR).",
+    },
+    gallery: {
+      title: "Gallery",
+      sub: "A glimpse into our treatments, therapists, and home service moments in Seminyak.",
+      photos: "Photos",
+      videos: "Videos",
+      footer: "Photos & videos · Aria Bali Massage",
+    },
+    spa: {
+      eyebrow: "Our Space",
+      title: "A peaceful sanctuary, prepared for you",
+      body: "Warm stones, soft candlelight, and a friendly team — every detail curated to help you unwind from the moment you arrive.",
+    },
+    notFound: {
+      title: "Page not found",
+      body: "The page you're looking for doesn't exist or has been moved.",
+      home: "Go home",
+    },
+    common: { duration: "Duration", price: "Price" },
     footer: { tagline: "Home service massage in Seminyak, Bali.", rights: "All rights reserved." },
   },
   id: {
     nav: { home: "Beranda", services: "Layanan Kami", body: "Perawatan Tubuh", packages: "Paket", gallery: "Galeri", about: "Tentang", contact: "Kontak" },
-    cta: { whatsapp: "Pesan via WhatsApp", whatsappShort: "WhatsApp", viewServices: "Lihat Layanan", bookNow: "Pesan Sekarang via WhatsApp" },
+    cta: { whatsapp: "Pesan via WhatsApp", whatsappShort: "WhatsApp", viewServices: "Lihat Layanan", bookNow: "Pesan Sekarang via WhatsApp", viewFullMenu: "Lihat menu lengkap" },
     hero: {
       eyebrow: "Pijat Home Service · Seminyak",
       title: "Rileks. Pulihkan. Seimbangkan.",
@@ -115,6 +143,34 @@ export const translations = {
       title: "Siap untuk rileks?",
       sub: "Kirim pesan WhatsApp dan kami akan mengatur sesi Anda.",
     },
+    bodyMenu: {
+      title: "Menu Perawatan Tubuh",
+      priceNote: "Semua harga dalam ribuan Rupiah (mis. 200 = Rp 200.000).",
+      signatureTitle: "Perawatan tubuh andalan",
+      signatureSub: "Pratinjau perawatan terfavorit kami. Harga dalam ribuan Rupiah (mis. 200 = Rp 200.000).",
+    },
+    packagesPage: {
+      title: "Paket Perawatan",
+      priceNote: "Semua harga dalam ribuan Rupiah (mis. 500 = Rp 500.000).",
+    },
+    gallery: {
+      title: "Galeri",
+      sub: "Sekilas tentang perawatan, terapis, dan momen layanan di tempat kami di Seminyak.",
+      photos: "Foto",
+      videos: "Video",
+      footer: "Foto & video · Aria Bali Massage",
+    },
+    spa: {
+      eyebrow: "Ruang Kami",
+      title: "Suasana tenang, disiapkan untuk Anda",
+      body: "Batu hangat, cahaya lilin lembut, dan tim yang ramah — setiap detail disiapkan agar Anda rileks sejak tiba.",
+    },
+    notFound: {
+      title: "Halaman tidak ditemukan",
+      body: "Halaman yang Anda cari tidak ada atau telah dipindahkan.",
+      home: "Kembali ke beranda",
+    },
+    common: { duration: "Durasi", price: "Harga" },
     footer: { tagline: "Pijat home service di Seminyak, Bali.", rights: "Hak cipta dilindungi." },
   },
 } as const;
