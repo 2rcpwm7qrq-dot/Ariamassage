@@ -52,8 +52,8 @@ export const Route = createRootRoute({
       { name: "description", content: "Aria Bali Massage offers professional, mobile-first home massage services in Seminyak, Bali, focused on relaxation and recovery." },
       { property: "og:description", content: "Aria Bali Massage offers professional, mobile-first home massage services in Seminyak, Bali, focused on relaxation and recovery." },
       { name: "twitter:description", content: "Aria Bali Massage offers professional, mobile-first home massage services in Seminyak, Bali, focused on relaxation and recovery." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/506c7455-6713-4cbf-a65c-3d4dde96a103/id-preview-9eafd36d--08e82220-3d60-4017-b2a4-ab8b38c405d8.lovable.app-1777296933092.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/506c7455-6713-4cbf-a65c-3d4dde96a103/id-preview-9eafd36d--08e82220-3d60-4017-b2a4-ab8b38c405d8.lovable.app-1777296933092.png" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f206284d-15f2-47bf-b95c-81d9ab75697b/id-preview-14d8072e--ab144ecd-ab2a-48d4-8048-6c9236d662ba.lovable.app-1777301101575.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f206284d-15f2-47bf-b95c-81d9ab75697b/id-preview-14d8072e--ab144ecd-ab2a-48d4-8048-6c9236d662ba.lovable.app-1777301101575.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
