@@ -1,10 +1,10 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Flower2 } from "lucide-react";
-import { BODY_TREATMENTS, useLang } from "@/lib/i18n";
+import { BODY_TREATMENTS, translateMenuItem, useLang } from "@/lib/i18n";
 
 export function BodyHighlights() {
-  const { t } = useLang();
-  // Pick a few signature treatments to showcase
+  const { t, lang } = useLang();
+  // Pick a few signature treatments to showcase (lookup by canonical English name)
   const highlightNames = [
     "Balinese Massage",
     "Hot Stone Massage",
@@ -15,7 +15,8 @@ export function BodyHighlights() {
   ];
   const items = highlightNames
     .map((name) => BODY_TREATMENTS.find((b) => b.name === name))
-    .filter(Boolean) as typeof BODY_TREATMENTS;
+    .filter(Boolean)
+    .map((b) => translateMenuItem(b as (typeof BODY_TREATMENTS)[number], lang));
 
   return (
     <section className="bg-gradient-soft py-20 sm:py-28">
@@ -26,18 +27,17 @@ export function BodyHighlights() {
               — {t.nav.body}
             </span>
             <h2 className="mt-5 max-w-2xl font-serif text-4xl font-medium leading-[1.05] text-foreground text-balance sm:text-5xl">
-              Signature body treatments
+              {t.bodyMenu.signatureTitle}
             </h2>
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-              A taste of our most loved treatments. Prices in thousands of IDR
-              (e.g. 200 = 200,000 IDR).
+              {t.bodyMenu.signatureSub}
             </p>
           </div>
           <Link
             to="/body-treatments"
             className="group inline-flex items-center gap-2 self-start rounded-full border border-border bg-card/70 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.2em] text-foreground transition-colors hover:border-primary hover:text-primary md:self-end"
           >
-            View full menu
+            {t.cta.viewFullMenu}
             <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
           </Link>
         </div>

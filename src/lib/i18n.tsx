@@ -5,7 +5,7 @@ export type Lang = "en" | "id";
 export const translations = {
   en: {
     nav: { home: "Home", services: "Services", body: "Body Treatments", packages: "Packages", gallery: "Gallery", about: "About", contact: "Contact" },
-    cta: { whatsapp: "Book via WhatsApp", whatsappShort: "WhatsApp", viewServices: "View Services", bookNow: "Book Now via WhatsApp" },
+    cta: { whatsapp: "Book via WhatsApp", whatsappShort: "WhatsApp", viewServices: "View Services", bookNow: "Book Now via WhatsApp", viewFullMenu: "View full menu" },
     hero: {
       eyebrow: "Home Service Massage · Seminyak",
       title: "Relax. Recharge. Rebalance.",
@@ -58,11 +58,39 @@ export const translations = {
       title: "Ready to relax?",
       sub: "Send us a message on WhatsApp and we'll arrange your session.",
     },
+    bodyMenu: {
+      title: "Body Treatment Menu",
+      priceNote: "All prices in thousands of Indonesian Rupiah (e.g. 200 = 200,000 IDR).",
+      signatureTitle: "Signature body treatments",
+      signatureSub: "A taste of our most loved treatments. Prices in thousands of IDR (e.g. 200 = 200,000 IDR).",
+    },
+    packagesPage: {
+      title: "Package Treatments",
+      priceNote: "All prices in thousands of Indonesian Rupiah (e.g. 500 = 500,000 IDR).",
+    },
+    gallery: {
+      title: "Gallery",
+      sub: "A glimpse into our treatments, therapists, and home service moments in Seminyak.",
+      photos: "Photos",
+      videos: "Videos",
+      footer: "Photos & videos · Aria Bali Massage",
+    },
+    spa: {
+      eyebrow: "Our Space",
+      title: "A peaceful sanctuary, prepared for you",
+      body: "Warm stones, soft candlelight, and a friendly team — every detail curated to help you unwind from the moment you arrive.",
+    },
+    notFound: {
+      title: "Page not found",
+      body: "The page you're looking for doesn't exist or has been moved.",
+      home: "Go home",
+    },
+    common: { duration: "Duration", price: "Price" },
     footer: { tagline: "Home service massage in Seminyak, Bali.", rights: "All rights reserved." },
   },
   id: {
     nav: { home: "Beranda", services: "Layanan Kami", body: "Perawatan Tubuh", packages: "Paket", gallery: "Galeri", about: "Tentang", contact: "Kontak" },
-    cta: { whatsapp: "Pesan via WhatsApp", whatsappShort: "WhatsApp", viewServices: "Lihat Layanan", bookNow: "Pesan Sekarang via WhatsApp" },
+    cta: { whatsapp: "Pesan via WhatsApp", whatsappShort: "WhatsApp", viewServices: "Lihat Layanan", bookNow: "Pesan Sekarang via WhatsApp", viewFullMenu: "Lihat menu lengkap" },
     hero: {
       eyebrow: "Pijat Home Service · Seminyak",
       title: "Rileks. Pulihkan. Seimbangkan.",
@@ -115,6 +143,34 @@ export const translations = {
       title: "Siap untuk rileks?",
       sub: "Kirim pesan WhatsApp dan kami akan mengatur sesi Anda.",
     },
+    bodyMenu: {
+      title: "Menu Perawatan Tubuh",
+      priceNote: "Semua harga dalam ribuan Rupiah (mis. 200 = Rp 200.000).",
+      signatureTitle: "Perawatan tubuh andalan",
+      signatureSub: "Pratinjau perawatan terfavorit kami. Harga dalam ribuan Rupiah (mis. 200 = Rp 200.000).",
+    },
+    packagesPage: {
+      title: "Paket Perawatan",
+      priceNote: "Semua harga dalam ribuan Rupiah (mis. 500 = Rp 500.000).",
+    },
+    gallery: {
+      title: "Galeri",
+      sub: "Sekilas tentang perawatan, terapis, dan momen layanan di tempat kami di Seminyak.",
+      photos: "Foto",
+      videos: "Video",
+      footer: "Foto & video · Aria Bali Massage",
+    },
+    spa: {
+      eyebrow: "Ruang Kami",
+      title: "Suasana tenang, disiapkan untuk Anda",
+      body: "Batu hangat, cahaya lilin lembut, dan tim yang ramah — setiap detail disiapkan agar Anda rileks sejak tiba.",
+    },
+    notFound: {
+      title: "Halaman tidak ditemukan",
+      body: "Halaman yang Anda cari tidak ada atau telah dipindahkan.",
+      home: "Kembali ke beranda",
+    },
+    common: { duration: "Durasi", price: "Harga" },
     footer: { tagline: "Pijat home service di Seminyak, Bali.", rights: "Hak cipta dilindungi." },
   },
 } as const;
@@ -259,6 +315,115 @@ export const PACKAGE_TREATMENTS: MenuItem[] = [
     desc: "90 Minutes Balinese Massage and 30 Minutes Body Scrub.",
   },
 ];
+
+// Indonesian translations for treatment & package names + descriptions.
+// Keyed by the canonical English name above.
+const MENU_ID: Record<string, { name: string; desc?: string }> = {
+  "Balinese Massage": {
+    name: "Pijat Bali",
+    desc: "Teknik tradisional seluruh tubuh dengan peregangan lembut, usapan panjang, dan akupresur menggunakan minyak aromaterapi hangat untuk melepas ketegangan dan mengembalikan keseimbangan.",
+  },
+  "Relaxing Massage": {
+    name: "Pijat Relaksasi",
+    desc: "Usapan lambat dan mengalir dengan tekanan ringan hingga sedang untuk menenangkan sistem saraf, meredakan stres, dan membuat Anda benar-benar rileks.",
+  },
+  "Foot Reflexology": {
+    name: "Refleksi Kaki",
+    desc: "Tekanan terarah pada titik refleks kaki untuk melancarkan sirkulasi, meredakan kaki lelah, dan mendukung kesehatan tubuh secara menyeluruh.",
+  },
+  "Anti Stress Massage": {
+    name: "Pijat Anti Stres",
+    desc: "Fokus pada kepala, leher, bahu, dan punggung untuk meluruhkan ketegangan akibat layar, perjalanan, dan stres harian.",
+  },
+  "Deep Tissue Massage": {
+    name: "Pijat Jaringan Dalam",
+    desc: "Tekanan kuat dan perlahan menjangkau lapisan otot dan jaringan ikat yang lebih dalam — cocok untuk ketegangan kronis, simpul otot, dan pemulihan olahraga.",
+  },
+  "Four Hand Massage": {
+    name: "Pijat Empat Tangan",
+    desc: "Dua terapis bekerja serempak dengan gerakan cermin untuk pengalaman pijat seluruh tubuh yang mendalam dan hampir meditatif.",
+  },
+  "Thai Massage": {
+    name: "Pijat Thai",
+    desc: "Dilakukan di atas matras dengan pakaian longgar, memadukan peregangan ala yoga dan tekanan ritmis untuk meningkatkan kelenturan dan aliran energi.",
+  },
+  "Natural Coconut Relaxing Massage": {
+    name: "Pijat Relaksasi Minyak Kelapa Alami",
+    desc: "Pijat relaksasi yang menutrisi menggunakan minyak kelapa murni khas Bali untuk melembapkan kulit sekaligus meredakan ketegangan otot.",
+  },
+  "Facial Oriflame": {
+    name: "Facial Oriflame",
+    desc: "Pembersihan, eksfoliasi, pijat lembut, dan masker dengan produk Oriflame untuk menyegarkan, mencerahkan, dan merevitalisasi kulit wajah.",
+  },
+  "Pedicure": {
+    name: "Pedikur",
+    desc: "Perawatan kaki dan kuku lengkap meliputi rendaman, eksfoliasi, perawatan kutikula, pembentukan, dan pewarnaan untuk kaki yang halus dan rapi.",
+  },
+  "Manicure": {
+    name: "Manikur",
+    desc: "Perawatan tangan dan kuku dengan rendaman, eksfoliasi, perawatan kutikula, pembentukan, dan pewarnaan agar tangan halus dan tampil rapi.",
+  },
+  "Creambath": {
+    name: "Creambath",
+    desc: "Ritual rambut dan kulit kepala khas Indonesia dengan krim bernutrisi, pijat kulit kepala, dan uap hangat untuk rambut lebih sehat dan berkilau.",
+  },
+  "Hot Stone Massage": {
+    name: "Pijat Batu Panas",
+    desc: "Batu vulkanik halus yang dihangatkan meluncur di sepanjang tubuh untuk menghangatkan otot, melancarkan sirkulasi, dan melepas ketegangan membandel.",
+  },
+  "Anti Cellulite Massage": {
+    name: "Pijat Anti Selulit",
+    desc: "Teknik remasan dan cubitan kuat pada pinggul, paha, dan perut untuk melancarkan sirkulasi, menghaluskan kulit, dan mengurangi tampilan selulit.",
+  },
+  "Lymphatic Drainage": {
+    name: "Drainase Limfatik",
+    desc: "Usapan ringan dan ritmis yang merangsang sistem limfatik untuk mengurangi retensi cairan, meredakan bengkak, dan mendukung detoksifikasi alami.",
+  },
+  "Hair Braid": {
+    name: "Kepang Rambut",
+    desc: "Kepangan ala pantai sesuai selera Anda — dari beberapa kepang aksen hingga seluruh kepala. Harga bervariasi tergantung gaya dan panjang rambut.",
+  },
+  "Head + Foot Massage": {
+    name: "Pijat Kepala + Kaki",
+    desc: "Kombinasi menenangkan antara pijat kulit kepala, leher, dan kaki — pas untuk meredakan sakit kepala dan kaki lelah tanpa sesi pijat seluruh tubuh.",
+  },
+  "Pregnancy Massage": {
+    name: "Pijat Ibu Hamil",
+    desc: "Pijat lembut dengan posisi miring khusus ibu hamil (setelah trimester pertama) untuk meredakan keluhan punggung, pinggul, dan kaki dengan aman.",
+  },
+  "Honeymoon Package (2 Pax)": {
+    name: "Paket Bulan Madu (2 Orang)",
+    desc: "Pijat Bali, Lulur, Masker Tubuh, dan Facial.",
+  },
+  "Single Package": {
+    name: "Paket Single",
+    desc: "Pijat Bali, Masker Tubuh Lidah Buaya, Mini Facial, dan Ear Candle gratis.",
+  },
+  "90 Minutes Package": {
+    name: "Paket 90 Menit",
+    desc: "Pijat Kepala, Pijat Kaki, dan Ear Candle.",
+  },
+  "120 Minutes Package": {
+    name: "Paket 120 Menit",
+    desc: "Pijat Bali 90 Menit dan Lulur 30 Menit.",
+  },
+};
+
+export function translateDuration(d: string, lang: Lang): string {
+  if (lang !== "id") return d;
+  return d.replace(/\bmin\b/g, "menit");
+}
+
+export function translateMenuItem(item: MenuItem, lang: Lang): MenuItem {
+  if (lang !== "id") return item;
+  const tr = MENU_ID[item.name];
+  return {
+    ...item,
+    name: tr?.name ?? item.name,
+    desc: tr?.desc ?? item.desc,
+    duration: translateDuration(item.duration, lang),
+  };
+}
 
 
 type Dict = (typeof translations)["en"];

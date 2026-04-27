@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { BODY_TREATMENTS, useLang, WHATSAPP_LINK } from "@/lib/i18n";
+import { BODY_TREATMENTS, translateMenuItem, useLang, WHATSAPP_LINK } from "@/lib/i18n";
 import { BookingCTA } from "@/components/sections/BookingCTA";
 import { ArrowUpRight, Flower2 } from "lucide-react";
 
@@ -24,7 +24,8 @@ export const Route = createFileRoute("/body-treatments")({
 });
 
 function BodyTreatmentsPage() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
+  const items = BODY_TREATMENTS.map((it) => translateMenuItem(it, lang));
   return (
     <>
       <section className="bg-gradient-hero pb-14 pt-32 sm:pb-20 sm:pt-52">
@@ -33,10 +34,10 @@ function BodyTreatmentsPage() {
             — {t.nav.body}
           </span>
           <h1 className="mt-3 font-serif text-4xl font-medium text-foreground sm:text-5xl">
-            Body Treatment Menu
+            {t.bodyMenu.title}
           </h1>
           <p className="mt-4 text-sm text-muted-foreground">
-            All prices in thousands of Indonesian Rupiah (e.g. 200 = 200,000 IDR).
+            {t.bodyMenu.priceNote}
           </p>
         </div>
       </section>
@@ -44,7 +45,7 @@ function BodyTreatmentsPage() {
       <section className="bg-gradient-soft py-20 sm:py-28">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <ul className="border-t border-border/70">
-            {BODY_TREATMENTS.map((item, i) => (
+            {items.map((item, i) => (
               <li key={item.name} className="border-b border-border/70">
                 <a
                   href={WHATSAPP_LINK}
