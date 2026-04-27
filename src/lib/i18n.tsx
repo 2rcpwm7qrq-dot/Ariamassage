@@ -321,7 +321,7 @@ export const PACKAGE_TREATMENTS: MenuItem[] = [
 const MENU_ID: Record<string, { name: string; desc?: string }> = {
   "Balinese Massage": {
     name: "Pijat Bali",
-    desc: "Teknik tradisional seluruh tubuh dengan peregangan lembut, usapan panjang, dan akupresur menggunakan minyak aromaterapi hangat untuk melepas ketegangan dan mengembalikan keseimbangan.",
+    desc: "Teknik tradisional seluruh tubuh dengan peregangan lembut, usapan panjang, dan akupresur bertekanan sedang untuk melepas ketegangan dan mengembalikan keseimbangan.",
   },
   "Relaxing Massage": {
     name: "Pijat Relaksasi",
