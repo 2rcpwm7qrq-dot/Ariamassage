@@ -183,13 +183,13 @@ export const BODY_TREATMENTS: MenuItem[] = [
     name: "Balinese Massage",
     price: "200",
     duration: "60 min",
-    desc: "Traditional full-body technique combining gentle stretches, long strokes, and acupressure with warm aromatic oil to release tension and restore balance.",
+    desc: "Traditional full-body technique combining gentle stretches, long strokes, and acupressure with medium pressure to release tension and restore balance.",
   },
   {
     name: "Relaxing Massage",
     price: "225",
     duration: "60 min",
-    desc: "Slow, flowing strokes with light to medium pressure designed to calm the nervous system, ease stress, and leave you in a deeply restful state.",
+    desc: "Slow, flowing strokes with soft, gentle pressure designed to calm the nervous system, ease stress, and leave you in a deeply restful state.",
   },
   {
     name: "Foot Reflexology",
@@ -321,11 +321,11 @@ export const PACKAGE_TREATMENTS: MenuItem[] = [
 const MENU_ID: Record<string, { name: string; desc?: string }> = {
   "Balinese Massage": {
     name: "Pijat Bali",
-    desc: "Teknik tradisional seluruh tubuh dengan peregangan lembut, usapan panjang, dan akupresur menggunakan minyak aromaterapi hangat untuk melepas ketegangan dan mengembalikan keseimbangan.",
+    desc: "Teknik tradisional seluruh tubuh dengan peregangan lembut, usapan panjang, dan akupresur bertekanan sedang untuk melepas ketegangan dan mengembalikan keseimbangan.",
   },
   "Relaxing Massage": {
     name: "Pijat Relaksasi",
-    desc: "Usapan lambat dan mengalir dengan tekanan ringan hingga sedang untuk menenangkan sistem saraf, meredakan stres, dan membuat Anda benar-benar rileks.",
+    desc: "Usapan lambat dan mengalir dengan tekanan lembut untuk menenangkan sistem saraf, meredakan stres, dan membuat Anda benar-benar rileks.",
   },
   "Foot Reflexology": {
     name: "Refleksi Kaki",
