@@ -20,7 +20,7 @@ export function BodyHighlights() {
 
   return (
     <section className="bg-gradient-soft py-14 sm:py-24">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <span className="text-[11px] font-medium uppercase tracking-[0.28em] text-primary">

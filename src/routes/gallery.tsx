@@ -56,7 +56,7 @@ function GalleryPage() {
       </section>
 
       <section className="bg-gradient-soft py-14 sm:py-24">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="mx-auto max-w-6xl px-5 sm:px-6">
           <h2 className="text-[11px] font-medium uppercase tracking-[0.28em] text-primary">
             — {t.gallery.photos}
           </h2>

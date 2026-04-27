@@ -4,7 +4,7 @@ export function WhyChoose() {
   const { t } = useLang();
   return (
     <section className="bg-background py-14 sm:py-24">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <div className="grid gap-10 md:grid-cols-12">
           <div className="md:col-span-5">
             <span className="text-[11px] font-medium uppercase tracking-[0.28em] text-primary">

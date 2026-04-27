@@ -45,7 +45,7 @@ function AboutPage() {
         </div>
       </section>
       <section className="bg-background py-16 sm:py-24">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+        <div className="mx-auto max-w-5xl px-5 sm:px-6">
           <div className="space-y-12">
             {items.map(({ icon: Icon, t: title, d }, i) => (
               <div key={title} className="grid grid-cols-12 items-baseline gap-4 border-b border-border/70 pb-12 last:border-b-0">

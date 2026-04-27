@@ -6,7 +6,7 @@ export function Location() {
   const q = encodeURIComponent("Jl. Dewi Saraswati II, Seminyak, Bali 80361");
   return (
     <section className="bg-background py-14 sm:py-24">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <div className="grid gap-12 md:grid-cols-12 md:gap-10">
           <div className="md:col-span-5 md:pt-4">
             <span className="text-[11px] font-medium uppercase tracking-[0.28em] text-primary">
