@@ -325,7 +325,7 @@ const MENU_ID: Record<string, { name: string; desc?: string }> = {
   },
   "Relaxing Massage": {
     name: "Pijat Relaksasi",
-    desc: "Usapan lambat dan mengalir dengan tekanan ringan hingga sedang untuk menenangkan sistem saraf, meredakan stres, dan membuat Anda benar-benar rileks.",
+    desc: "Usapan lambat dan mengalir dengan tekanan lembut untuk menenangkan sistem saraf, meredakan stres, dan membuat Anda benar-benar rileks.",
   },
   "Foot Reflexology": {
     name: "Refleksi Kaki",
