@@ -4,7 +4,7 @@ import { useLang, WHATSAPP_LINK, WHATSAPP_NUMBER_DISPLAY } from "@/lib/i18n";
 export function BookingCTA() {
   const { t } = useLang();
   return (
-    <section className="relative overflow-hidden bg-gradient-hero py-24 sm:py-36">
+    <section className="relative overflow-hidden bg-gradient-hero py-16 sm:py-32">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-10 md:grid-cols-12 md:items-end">
           <div className="md:col-span-8">
