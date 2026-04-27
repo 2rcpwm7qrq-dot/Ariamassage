@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Flower2 } from "lucide-react";
-import { BODY_TREATMENTS, useLang } from "@/lib/i18n";
+import { BODY_TREATMENTS, translateMenuItem, useLang } from "@/lib/i18n";
 
 export function BodyHighlights() {
   const { t } = useLang();
