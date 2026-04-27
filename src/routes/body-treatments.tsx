@@ -64,6 +64,11 @@ function BodyTreatmentsPage() {
                         {item.name}
                       </h3>
                     </div>
+                    {item.desc && (
+                      <p className="mt-2 ml-6 max-w-xl text-xs leading-relaxed text-muted-foreground sm:text-sm">
+                        {item.desc}
+                      </p>
+                    )}
                     <span className="mt-1 ml-6 block text-[10px] uppercase tracking-[0.2em] text-muted-foreground sm:hidden">
                       {item.duration}
                     </span>
