@@ -26,7 +26,7 @@ export function BodyHighlights() {
             <span className="text-[11px] font-medium uppercase tracking-[0.28em] text-primary">
               — {t.nav.body}
             </span>
-            <h2 className="mt-5 max-w-2xl font-serif text-4xl font-medium leading-[1.05] text-foreground text-balance sm:text-5xl">
+            <h2 className="mt-5 max-w-2xl font-serif text-[2rem] font-medium leading-[1.05] text-foreground text-balance sm:text-5xl">
               {t.bodyMenu.signatureTitle}
             </h2>
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">

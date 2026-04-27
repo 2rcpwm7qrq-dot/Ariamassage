@@ -33,7 +33,7 @@ function BodyTreatmentsPage() {
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-primary">
             — {t.nav.body}
           </span>
-          <h1 className="mt-3 font-serif text-4xl font-medium text-foreground sm:text-5xl">
+          <h1 className="mt-3 font-serif text-[2rem] font-medium text-foreground sm:text-5xl">
             {t.bodyMenu.title}
           </h1>
           <p className="mt-4 text-sm text-muted-foreground">

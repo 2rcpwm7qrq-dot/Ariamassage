@@ -38,7 +38,7 @@ function AboutPage() {
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-primary">
             {t.about.eyebrow}
           </span>
-          <h1 className="mt-3 font-serif text-4xl font-medium text-foreground sm:text-5xl">
+          <h1 className="mt-3 font-serif text-[2rem] font-medium text-foreground sm:text-5xl">
             {t.about.title}
           </h1>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground">{t.about.body}</p>

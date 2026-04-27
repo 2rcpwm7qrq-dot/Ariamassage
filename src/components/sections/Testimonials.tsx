@@ -37,7 +37,7 @@ export function Testimonials() {
           <span className="text-[11px] font-medium uppercase tracking-[0.28em] text-primary">
             — {t.reviews.eyebrow}
           </span>
-          <h2 className="mt-5 font-serif text-4xl font-medium leading-[1.05] text-foreground text-balance sm:text-5xl">
+          <h2 className="mt-5 font-serif text-[2rem] font-medium leading-[1.05] text-foreground text-balance sm:text-5xl">
             {t.reviews.title}
           </h2>
         </div>
