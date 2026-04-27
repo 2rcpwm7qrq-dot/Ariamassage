@@ -33,7 +33,7 @@ function AboutPage() {
   ];
   return (
     <>
-      <section className="bg-gradient-hero pb-14 pt-32 sm:pb-24 sm:pt-52">
+      <section className="bg-gradient-hero pb-12 pt-28 sm:pb-24 sm:pt-52">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-primary">
             {t.about.eyebrow}
