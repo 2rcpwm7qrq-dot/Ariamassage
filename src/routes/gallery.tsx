@@ -101,7 +101,7 @@ function GalleryPage() {
           </div>
 
           <p className="mt-16 text-center text-xs uppercase tracking-[0.25em] text-muted-foreground">
-            Photos & videos · Aria Bali Massage
+            {t.gallery.footer}
           </p>
         </div>
       </section>
