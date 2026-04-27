@@ -189,7 +189,7 @@ export const BODY_TREATMENTS: MenuItem[] = [
     name: "Relaxing Massage",
     price: "225",
     duration: "60 min",
-    desc: "Slow, flowing strokes with light to medium pressure designed to calm the nervous system, ease stress, and leave you in a deeply restful state.",
+    desc: "Slow, flowing strokes with soft, gentle pressure designed to calm the nervous system, ease stress, and leave you in a deeply restful state.",
   },
   {
     name: "Foot Reflexology",
