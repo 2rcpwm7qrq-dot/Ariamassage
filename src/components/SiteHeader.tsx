@@ -102,7 +102,7 @@ export function SiteHeader() {
                   onClick={() => setLang(l)}
                   aria-pressed={lang === l}
                   className={cn(
-                    "relative z-10 px-3 py-1.5 uppercase tracking-wider transition-colors duration-200",
+                    "relative z-10 min-h-[36px] px-3.5 py-1.5 uppercase tracking-wider transition-colors duration-200",
                     lang === l ? "text-primary-foreground" : "text-muted-foreground hover:text-foreground",
                   )}
                 >
