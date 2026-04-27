@@ -9,7 +9,7 @@ export function AboutPreview() {
     { icon: Leaf, t: t.about.h3, d: t.about.h3d },
   ];
   return (
-    <section className="bg-background py-20 sm:py-28">
+    <section className="bg-background py-14 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-12 md:grid-cols-12 md:gap-16">
           <div className="md:col-span-5">

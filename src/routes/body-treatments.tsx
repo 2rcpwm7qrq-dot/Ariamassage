@@ -28,7 +28,7 @@ function BodyTreatmentsPage() {
   const items = BODY_TREATMENTS.map((it) => translateMenuItem(it, lang));
   return (
     <>
-      <section className="bg-gradient-hero pb-14 pt-32 sm:pb-20 sm:pt-52">
+      <section className="bg-gradient-hero pb-10 pt-28 sm:pb-20 sm:pt-52">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-primary">
             — {t.nav.body}
@@ -42,7 +42,7 @@ function BodyTreatmentsPage() {
         </div>
       </section>
 
-      <section className="bg-gradient-soft py-20 sm:py-28">
+      <section className="bg-gradient-soft py-14 sm:py-24">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <ul className="border-t border-border/70">
             {items.map((item, i) => (

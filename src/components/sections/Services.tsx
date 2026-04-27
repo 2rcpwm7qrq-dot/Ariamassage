@@ -6,7 +6,7 @@ const ICONS = [Flower2, Sparkles, Footprints, Droplets, Hand];
 export function Services({ compact = false }: { compact?: boolean }) {
   const { t } = useLang();
   return (
-    <section className="bg-gradient-soft py-20 sm:py-28">
+    <section className="bg-gradient-soft py-14 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>

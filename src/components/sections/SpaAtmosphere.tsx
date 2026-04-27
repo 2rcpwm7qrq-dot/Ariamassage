@@ -19,7 +19,7 @@ const STOCK = [
 export function SpaAtmosphere() {
   const { t } = useLang();
   return (
-    <section className="bg-background py-20 sm:py-28">
+    <section className="bg-background py-14 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl">
           <span className="text-[11px] font-medium uppercase tracking-[0.28em] text-primary">

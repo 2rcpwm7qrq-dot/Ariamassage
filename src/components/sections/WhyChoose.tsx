@@ -3,7 +3,7 @@ import { useLang } from "@/lib/i18n";
 export function WhyChoose() {
   const { t } = useLang();
   return (
-    <section className="bg-background py-20 sm:py-28">
+    <section className="bg-background py-14 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-10 md:grid-cols-12">
           <div className="md:col-span-5">
