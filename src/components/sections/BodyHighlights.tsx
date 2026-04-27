@@ -3,8 +3,8 @@ import { ArrowUpRight, Flower2 } from "lucide-react";
 import { BODY_TREATMENTS, translateMenuItem, useLang } from "@/lib/i18n";
 
 export function BodyHighlights() {
-  const { t } = useLang();
-  // Pick a few signature treatments to showcase
+  const { t, lang } = useLang();
+  // Pick a few signature treatments to showcase (lookup by canonical English name)
   const highlightNames = [
     "Balinese Massage",
     "Hot Stone Massage",
@@ -15,7 +15,8 @@ export function BodyHighlights() {
   ];
   const items = highlightNames
     .map((name) => BODY_TREATMENTS.find((b) => b.name === name))
-    .filter(Boolean) as typeof BODY_TREATMENTS;
+    .filter(Boolean)
+    .map((b) => translateMenuItem(b as (typeof BODY_TREATMENTS)[number], lang));
 
   return (
     <section className="bg-gradient-soft py-20 sm:py-28">
