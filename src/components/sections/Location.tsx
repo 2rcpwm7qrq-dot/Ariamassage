@@ -28,7 +28,7 @@ export function Location() {
             <iframe
               title="Aria Bali Massage location"
               src={`https://www.google.com/maps?q=${q}&output=embed`}
-              className="h-80 w-full border border-border/70 grayscale-[20%] md:h-[28rem]"
+              className="h-64 w-full rounded-2xl border border-border/70 grayscale-[20%] sm:h-80 md:h-[28rem] md:rounded-none"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
