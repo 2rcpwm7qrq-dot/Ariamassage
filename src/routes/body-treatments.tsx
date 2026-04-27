@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { BODY_TREATMENTS, useLang, WHATSAPP_LINK } from "@/lib/i18n";
+import { BODY_TREATMENTS, translateMenuItem, useLang, WHATSAPP_LINK } from "@/lib/i18n";
 import { BookingCTA } from "@/components/sections/BookingCTA";
 import { ArrowUpRight, Flower2 } from "lucide-react";
 
